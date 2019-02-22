@@ -87,7 +87,7 @@ public class ArcherController : PlayerController
 
     void GetInput()
     {
-        CalculateInputVectorFixedCam();
+        CalculateInputVector();
         if (Input.GetButtonDown("Fire" + playerNum) && GetComponent<ArcherStats>().energy > 10f)
         {
             arrowSpeed = 10f;
